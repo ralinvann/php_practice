@@ -34,8 +34,8 @@
                 </form>
                 <?php
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                        $name = htmlspecialchars($_POST['name']);
-                        $age = htmlspecialchars($_POST['age']);
+                        $name = htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
+                        $age = htmlspecialchars($_POST['age'], ENT_QUOTES, 'UTF-8');
                         echo "<p class='text-center mt-3'>Hello, $name! You are $age years old.</p>";
                     }
                 ?>
