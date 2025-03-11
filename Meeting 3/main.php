@@ -8,7 +8,7 @@
     $number = isset($_POST['number']) ? $_POST['number'] : 6;
     $parity = $number % 2 == 0 ? "even" : "odd";
 
-    $item = isset($_POST['item']) ? $_POST['item'] : 1000;
+    $item = isset($_POST['item']) ? $_POST['item'] : 100;
     $discount = isset($_POST['discount']) ? $_POST['discount'] : 20;
     $discounted_item = $item - ($item * $discount / 100);
 ?>
